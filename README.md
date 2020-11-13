@@ -1,7 +1,7 @@
-# Virket's Messages core module
-  Messages module that implements
-  * Contact types (interfaces)
-  * Contact Model
+# Virket's GMB-REviews core module
+  Reviews module that implements
+  * Review types (interfaces)
+  * Review Model
   * Repository
   * Service
   * State management (actions, effects, reducers, selectors)
@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 
 
 // Import the module
-import { MessagesCoreModule } from '@virket/messages-core/dist/src';
+import { GmbReviewsCoreModule } from '@virket/gmb-reviews-core/dist/src';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +25,7 @@ import { MessagesCoreModule } from '@virket/messages-core/dist/src';
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     ...
-    MessagesCoreModule.forRoot({
+    GmbReviewsCoreModule.forRoot({
       apiUrl: environment.apiUrl,
       instanceName: environment.instanceName
     }),
